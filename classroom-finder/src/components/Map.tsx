@@ -7,12 +7,12 @@ function Map() {
       <div>
         <div>
           <h1>
-            UOttawa Campus Map
+            Map Page
           </h1>
           <img src="src\assets\uottawa-campus--map.jpg" alt="University of Ottawa' campus map " />
         </div>
         <div>
-            <p>map page</p>
+          {}
         </div>
       </div>
       </>

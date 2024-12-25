@@ -1,41 +1,25 @@
-import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom';
+
 import './App.css'
 
-function App() {
-  const [mapVisibility, setMapVisibility] = useState(false)
 
-  if (!mapVisibility) {
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import Map from './components/Map'
+
+function App() {
+  
   return (
     <>
-      <div className=''>
-        <div>
-          <h1>
-            UOttawa Campus
-          </h1>
-          </div>
-        <div>
-          <button onClick={() => setMapVisibility(true)}>AVAILABLE SPOTS</button>
-        </div>
-      </div>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/map" element={<Map />} />
+      </Routes>
+    </div>
     </>
   )
-  } else {
-    return (
-      <>
-      <div>
-        <div>
-          <h1>
-            UOttawa Campus
-          </h1>
-          <img src="src\assets\uottawa-campus--map.jpg" alt="University of Ottawa' campus map " />
-        </div>
-        <div>
-          <button onClick={() => setMapVisibility(false)}>HIDE MAP</button>
-        </div>
-      </div>
-      </>
-    )
-  }
 }
 
 export default App
