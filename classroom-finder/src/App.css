@@ -1,0 +1,70 @@
+.Container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  border: solid 1px #ff00ff;
+  border-radius: 5px;
+  grid-template:
+    "header header header" 2fr
+    "main main main" 3fr
+    "footer footer footer" 1fr
+    / 1fr 2fr 1fr;
+  gap: 15px;
+  justify-content: center;
+}
+
+.item {
+  text-align: center;
+  border-radius: 5px;
+  border: solid 1px #646cff;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  color: #ffffff;
+  text-shadow: 0 0 50px #000000, 0 0 50px #000000;
+}
+
+.header h1 {
+  font-size: 4em;
+}
+
+.header im
+
+.header h3 {
+  font-size: 1.2em;
+}
+
+.main {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+  margin: 0 5%;
+  grid-area: main;
+  background-color: #ffffff;
+  border-radius: 15px;
+  color: #646cff;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #0000005f;
+  color: #242424;
+}
+
+.header img {
+  box-shadow: #ba0808;
+  width: 25%;
+  object-fit: fill;
+  border-radius: 5px;
+  transition: 2s;
+}
+
+.header img:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 2.75rem rgb(101, 18, 14));
+  transition: 1s;
+}
